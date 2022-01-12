@@ -32,8 +32,7 @@ export class ProDialogComponent implements AfterViewInit, OnDestroy, OnInit {
   position!: 'TOP' | 'BOTTOM' | 'RIGHT' | 'LEFT' | 'CENTER'
   background!: 'BLACK' | 'TRANSPARENT'
   closeOnOverlay!: boolean;
-  @ViewChild(ProInsertionDirective, { static: true })
-  insertionPoint!: ProInsertionDirective;
+  @ViewChild(ProInsertionDirective, { static: true }) insertionPoint!: ProInsertionDirective;
   animation = true;
 
   private readonly onDialogClose = new Subject<any>();

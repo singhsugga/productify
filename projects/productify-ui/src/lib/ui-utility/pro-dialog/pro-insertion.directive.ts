@@ -1,7 +1,7 @@
 import { Directive, ViewContainerRef } from '@angular/core';
 
 @Directive({
-  selector: '[proInsertion]',
+  selector: '[proInsertion]'
 })
 export class ProInsertionDirective {
   constructor(public viewContainerRef: ViewContainerRef) {}
