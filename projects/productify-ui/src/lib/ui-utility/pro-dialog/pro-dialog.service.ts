@@ -4,11 +4,6 @@ import { ProDialogInjector } from './pro-dialog.injector';
 import { ProDialogRef } from './pro-dialog.ref';
 import { ProDialogComponent } from './pro-dialog/pro-dialog.component';
 
-// import { UiDialogConfig } from './ui-dialog-config';
-// import { UiDialogInjector } from './ui-dialog-injector';
-// import { UiDialogRef } from './ui-dialog-ref';
-// import { UiDialogComponent } from './ui-dialog.component';
-// import { UiDialogModule } from './ui-dialog.module';
 
 
 @Injectable({
@@ -57,8 +52,6 @@ export class ProDialogService {
     private removeDialogComponentFromBody() {
         this.appRef.detachView(this.dialogComponentRef[this.dialogComponentRef?.length - 1].hostView);
         this.dialogComponentRef.pop()?.destroy();
-        console.log("dialog refs", this.dialogComponentRef)
-
     }
 
 }

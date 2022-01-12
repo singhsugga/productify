@@ -1,27 +1,18 @@
-<div
-  class="overlay"
-  (click)="onOverlayClicked($event)"
-  [ngClass]="{
+<div class="overlay" (click)="onOverlayClicked($event)" [ngClass]="{
     top: position === 'TOP',
     right: position === 'RIGHT',
     bottom: position === 'BOTTOM',
     left: position === 'LEFT',
     center: position === 'CENTER',
     black: background === 'BLACK'
-  }"
->
-  <div
-    class="dialog"
-    [class.animate]="animation"
-    (click)="onDialogClicked($event)"
-    [ngClass]="{
+  }">
+    <div class="dialog" [class.animate]="animation" (click)="onDialogClicked($event)" [ngClass]="{
       top: position === 'TOP',
       right: position === 'RIGHT',
       bottom: position === 'BOTTOM',
       left: position === 'LEFT',
       center: position === 'CENTER'
-    }"
-  >
-    <ng-template proInsertion></ng-template>
-  </div>
+    }">
+        <ng-template proInsertion></ng-template>
+    </div>
 </div>

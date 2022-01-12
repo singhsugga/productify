@@ -1,0 +1,1 @@
+export * from './pro-dialog/pro-dialog.module';
