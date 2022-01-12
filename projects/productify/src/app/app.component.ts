@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProDialogService } from 'projects/productify-ui/src/public-api';
+import { ProDialogService } from '@productify/ui';
 
 import { DialogComponent } from './demo/dialog/dialog.component';
 

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ProDialogModule } from 'projects/productify-ui/src';
+import { ProDialogModule } from '@productify/ui';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
